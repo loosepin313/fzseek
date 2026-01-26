@@ -1,0 +1,15 @@
+[package]
+name = "fzseek"
+version = "0.0.1"
+edition = "2021"
+description = "A kind of cmdb cli with a fuzzy finder front end with many connectors to many datasources"
+authors = ["Chris Harris <chris.m.harris@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/yourusername/fzseek"
+
+[dependencies]
+clap = { version = "4.0", features = ["derive"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_yaml = "0.9"
+fuzzy-matcher = "0.3.7"
