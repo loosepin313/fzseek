@@ -1,6 +1,6 @@
 # fzseek
 
-A kind of cmdb cli with a fuzzy finder front end with many connectors to many datasources 
+A command-line tool with a fuzzy finder frontend for searching resources across multiple data sources.
 
 ## Features
 
@@ -8,6 +8,7 @@ A kind of cmdb cli with a fuzzy finder front end with many connectors to many da
 - Command-line interface with version support
 - Configuration file support
 - Extensible architecture for multiple data sources
+- Sample data implementation for demonstration
 
 ## Contributors
 - Chris Harris (chris.m.harris)
@@ -53,6 +54,14 @@ Example:
 cargo run -- database
 ```
 
+## Configuration
+
+The application will automatically create a default configuration file at `~/.config/fzseek/config.yaml` on first run. The configuration file supports:
+
+- General settings: search mode, max results, show hidden files
+- UI settings: theme, color output, animations
+- Connectors: configuration for data source connectors
+
 ## Testing
 
 To run unit tests:
@@ -72,4 +81,20 @@ cargo run
 
 # Perform a fuzzy search
 cargo run -- database
+
+# Search with different query terms
+cargo run -- web
+cargo run -- load
+```
+
+## Implementation Status
+
+The current implementation includes:
+- Fuzzy search functionality using the fuzzy-matcher crate
+- Command-line interface with clap
+- Configuration file support with serde_yaml
+- Sample data for demonstration (will be extended with real connectors)
+- Basic structure for extensible data source connectors
+
+Note: While the architecture supports multiple data sources, the current implementation uses sample data for demonstration purposes.
 ``` 

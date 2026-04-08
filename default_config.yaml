@@ -4,20 +4,16 @@
 general:
   # Default search mode (fuzzy, exact, regex)
   search_mode: "fuzzy"
-  
   # Maximum number of results to display
   max_results: 100
-  
   # Whether to show hidden files in searches
   show_hidden: false
 
 ui:
   # Theme settings
   theme: "default"
-  
   # Whether to enable color output
   color_enabled: true
-  
   # Whether to enable animations
   animations_enabled: false
 

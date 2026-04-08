@@ -1,14 +1,16 @@
 # Things to Do
 
+This document tracks the current status of fzseek development. Items marked as completed are fully implemented, while pending items represent ongoing or future work.
+
 | Status | Task |
 |--------|------|
-| [ ] | Implement fuzzy search functionality |
-| [ ] | Add support for multiple data sources |
-| [ ] | Create documentation for API endpoints |
-| [ ] | Add unit tests for core functionality |
-| [ ] | Implement configuration file support |
-| [ ] | Add command-line argument parsing |
-| [ ] | Create user-friendly help system |
+| [x] | Implement fuzzy search functionality |
+| [x] | Add support for multiple data sources |
+| [x] | Create documentation for API endpoints |
+| [x] | Add unit tests for core functionality |
+| [x] | Implement configuration file support |
+| [x] | Add command-line argument parsing |
+| [x] | Create user-friendly help system |
 | [ ] | Implement data caching mechanism |
 | [ ] | Add progress indicators for long operations |
-| [ ] | Create example usage documentation |
+| [x] | Create example usage documentation |
